@@ -1,0 +1,93 @@
+<html class="no-js" lang="en" >
+<head>
+<link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+ <base target="_blank">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1">
+  <link rel="stylesheet" href="ok.css" type="text/css"/>
+<title>CAF - NSP Collection</title>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#North {background-color:red;}
+#South {background-color:#0b0a08;}
+</style>
+</head>
+<!--<a class="logo-nintendo" data-metric-link="home" href="#" aria-label="Nintendo Home">Contact</a>-->
+</header>
+
+<div id="North" class="tabcontent">
+  <h1>Light</h1>
+  <p>May it be a light to you in dark places, when all other lights go out.</p>
+</div>
+
+<div id="South" class="tabcontent">
+  <h1>Dark</h1>
+  <p>When it is dark enough, you can see the stars.</p>
+</div>
+
+<button class="tablink" onclick="openCity('North', this, 'red');;chBackcolor('#ebebeb');" id="defaultOpen">Light Theme</button>
+<button class="tablink" onclick="openCity('South', this, '#0b0a08');chBackcolor('#181818');">Dark Theme</button>
+
+
+
+<script>
+function chBackcolor(color) {
+   document.body.style.background = color;
+}
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<body>
+
+<center><div id="wrap">
+    <div class="big_col">
+        <div class="small_img"><br><br>
+      </div>
+</div>
+<a href=https://host.avrwar.ze.cx/WARRIORS_OROCHI_4_UPD_v458752_NSW-CAF.nsp><img src=img/FAC-WSN_257854v_DPU_4_IHCORO_SROIRRAW.jpg></img></a>
+</body>
+<footer>
+</footer>
+</center>
