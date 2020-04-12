@@ -1,43 +1,13 @@
-<html class="no-js" lang="en" >
+<html>
 <head>
-<link rel="icon" href="favicon.ico">
-  <meta charset="UTF-8" />
- <base target="_blank">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="ok.css" type="text/css"/>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CAF - NSP Collection</title>
 <style>
 html {
   scroll-behavior: smooth;
 }
-body {font-family: "Lato", sans-serif;}
-
-.tablink {
-  background-color: black;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-/*  padding: 14px 16px;*/
-  font-size: 10px;
-  width: 1%;
-}
-
-.tablink:hover {
-  background-color: darkgrey;
-}
-
-/* Style the tab content */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 50px;
-  text-align: center;
-}
-
-#North {background-color:black;}
-#South {background-color:#181818;}
 #myBtn {
   display: none;
   position: fixed;
@@ -47,7 +17,7 @@ body {font-family: "Lato", sans-serif;}
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: ghostwhite;
+  background-color: red;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -57,126 +27,77 @@ body {font-family: "Lato", sans-serif;}
 #myBtn:hover {
   background-color: #555;
 }
-
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
+.alphabet {
+    margin: auto;
+    padding:0;
+    cursor: pointer;
+    width:80%;
 }
 
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+.alphabet li {
+    font-size: 16px;
+    color:white;
+    display:inline-block;
+    font-family: monospace;
+    width:2.77%;
 }
 
-.content {
-  padding: 16px;
+.alphabet li:hover {
+    color:black;
+    background-color: white;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+img {
+  border: 5px solid transparent;
+  border-radius: 5px;
 }
-
-.sticky + .content {
-  padding-top: 102px;
+img:hover {
+  filter: saturate(1.3);
+  border: 5px solid skyblue;
+  border-radius: 5px;
 }
 </style>
 </head>
-<!--<a class="logo-nintendo" data-metric-link="home" href="#" aria-label="Nintendo Home">Contact</a>-->
-</header>
-
-<div id="North" class="tabcontent">
-  <h1>CAF</h1>
-  <p>Quality is not an act, it is a habit.</p>
-</div>
-
-<div id="South" class="tabcontent">
-  <h5>CAF</h5>
-  <h1>Dark</h1>
-  <p>When it is dark enough, you can see the stars.</p>
-</div>
-<div id="atr" class="sticky" style="height: 1;display: grid;">
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#North'" id="defaultOpen">#</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#0'" id="defaultOpen">0</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#A'" id="defaultOpen">A</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#B'" id="defaultOpen">B</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#C'" id="defaultOpen">C</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#D'" id="defaultOpen">D</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#E'" id="defaultOpen">E</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#F'" id="defaultOpen">F</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#G'" id="defaultOpen">G</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#H'" id="defaultOpen">H</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#I'" id="defaultOpen">I</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#J'" id="defaultOpen">J</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#K'" id="defaultOpen">K</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#L'" id="defaultOpen">L</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#M'" id="defaultOpen">M</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#N'" id="defaultOpen">N</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#O'" id="defaultOpen">O</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#P'" id="defaultOpen">P</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#Q'" id="defaultOpen">Q</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#R'" id="defaultOpen">R</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#S'" id="defaultOpen">S</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#T'" id="defaultOpen">T</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#U'" id="defaultOpen">U</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#V'" id="defaultOpen">V</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#W'" id="defaultOpen">W</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#X'" id="defaultOpen">X</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#Y'" id="defaultOpen">Y</button>
-<button class="tablink" onclick="openCity('North', this, 'darkgrey');;chBackcolor('black');location.href='#Z'" id="defaultOpen">Z</button>
-</div>
-<script>
-function chBackcolor(color) {
-   document.body.style.background = color;
-}
-function openCity(cityName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-<body>
-<!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>-->
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-<center><div id="wrap">
-    <div class="big_col">
-        <div class="small_img"><br><br>
-      </div>
-</div>
+<body style="
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: x-large;
+    text-align: center;
+">
+<br>
+<p><h3>CAF</h3></p>
+<p><h5>I think in black.</h5></p>
+<ul class="alphabet">
+<a href="#0"><li>#</li></a>
+<a href="#A"><li>A</li></a>
+<a href="#B"><li>B</li></a>
+<a href="#C"><li>C</li></a>
+<a href="#D"><li>D</li></a>
+<a href="#E"><li>E</li></a>
+<a href="#F"><li>F</li></a>
+<a href="#G"><li>G</li></a>
+<a href="#H"><li>H</li></a>
+<a href="#I"><li>I</li></a>
+<a href="#J"><li>J</li></a>
+<a href="#K"><li>K</li></a>
+<a href="#L"><li>L</li></a>
+<a href="#M"><li>M</li></a>
+<a href="#N"><li>N</li></a>
+<a href="#O"><li>O</li></a>
+<a href="#P"><li>P</li></a>
+<a href="#Q"><li>Q</li></a>
+<a href="#R"><li>R</li></a>
+<a href="#S"><li>S</li></a>
+<a href="#T"><li>T</li></a>
+<a href="#U"><li>U</li></a>
+<a href="#V"><li>V</li></a>
+<a href="#W"><li>W</li></a>
+<a href="#X"><li>X</li></a>
+<a href="#Y"><li>Y</li></a>
+<a href="#Z"><li>Z</li></a>
+</ul>
+<br>
 <!-- Games -->
 <a id="0" href=https://cdn.0065.cf/1001_Ultimate_Mahjong_NSW-CAF.nsp><img src=img/FAC-WSN_gnojhaM_etamitlU_1001.jpg></img></a>
 <a href=https://cdn.0065.cf/10_RETURNS_NSW-CAF.nsp><img src=img/FAC-WSN_SNRUTER_01.jpg></img></a>
@@ -1146,7 +1067,8 @@ function topFunction() {
 <a href=https://cdn.0065.cf/Quest_for_the_Golden_Duck_NSW-CAF.nsp><img src=img/FAC-WSN_kcuD_nedloG_eht_rof_tseuQ.jpg></img></a>
 <a href=https://cdn.0065.cf/Quest_of_Dungeons_NSW-CAF.nsp><img src=img/FAC-WSN_snoegnuD_fo_tseuQ.jpg></img></a>
 <a href=https://cdn.0065.cf/Q-YO_Blaster_NSW-CAF.nsp><img src=img/FAC-WSN_retsalB_OY-Q.jpg></img></a>
-<a id="R" href=https://cdn.0065.cf/Race_Arcade_NSW-CAF.nsp><img src=img/FAC-WSN_edacrA_ecaR.jpg></img></a>
+<img id="R" src="img/R.gif" style="border: 5px solid transparent">
+<a href=https://cdn.0065.cf/Race_Arcade_NSW-CAF.nsp><img src=img/FAC-WSN_edacrA_ecaR.jpg></img></a>
 <a href=https://cdn.0065.cf/Raiders_of_the_North_Sea_NSW-CAF.nsp><img src=img/FAC-WSN_aeS_htroN_eht_fo_srediaR.jpg></img></a>
 <a href=https://cdn.0065.cf/Raining_Coins_NSW-CAF.nsp><img src=img/FAC-WSN_snioC_gniniaR.jpg></img></a>
 <a href=https://cdn.0065.cf/Rally_Rock_N_Racing_NSW-CAF.nsp><img src=img/FAC-WSN_gnicaR_N_kcoR_yllaR.jpg></img></a>
@@ -1196,7 +1118,8 @@ function topFunction() {
 <a href=https://cdn.0065.cf/Royal_Adviser_NSW-CAF.nsp><img src=img/FAC-WSN_resivdA_layoR.jpg></img></a>
 <a href=https://cdn.0065.cf/R-Type_Dimensions_EX_NSW-CAF.nsp><img src=img/FAC-WSN_XE_snoisnemiD_epyT-R.jpg></img></a>
 <a href=https://cdn.0065.cf/Run_The_Fan_NSW-CAF.nsp><img src=img/FAC-WSN_naF_ehT_nuR.jpg></img></a>
-<a id="S" href=https://cdn.0065.cf/Saboteur_II_Avenging_Angel_NSW-CAF.nsp><img src=img/FAC-WSN_legnA_gnignevA_II_ruetobaS.jpg></img></a>
+<img id="S" src="img/S.gif" style="border: 5px solid transparent">
+<a href=https://cdn.0065.cf/Saboteur_II_Avenging_Angel_NSW-CAF.nsp><img src=img/FAC-WSN_legnA_gnignevA_II_ruetobaS.jpg></img></a>
 <a href=https://cdn.0065.cf/Saboteur_NSW-CAF.nsp><img src=img/FAC-WSN_ruetobaS.jpg></img></a>
 <a href=https://cdn.0065.cf/Safari_Pinball_NSW-CAF.nsp><img src=img/FAC-WSN_llabniP_irafaS.jpg></img></a>
 <a href=https://cdn.0065.cf/Safety_First_NSW-CAF.nsp><img src=img/FAC-WSN_tsriF_ytefaS.jpg></img></a>
@@ -1293,7 +1216,8 @@ function topFunction() {
 <a href=https://cdn.0065.cf/Swords_And_Soldiers_2_NSW-CAF.nsp><img src=img/FAC-WSN_2_sreidloS_dnA_sdrowS.jpg></img></a>
 <a href=https://cdn.0065.cf/Swords_Soldiers_NSW-CAF.nsp><img src=img/FAC-WSN_sreidloS_sdrowS.jpg></img></a>
 <a href=https://cdn.0065.cf/Sydney_Hunter_and_the_Curse_of_the_Mayan_NSW-CAF.nsp><img src=img/FAC-WSN_nayaM_eht_fo_esruC_eht_dna_retnuH_yendyS.jpg></img></a>
-<a id="T" href=https://cdn.0065.cf/Tachyon_Project_NSW-CAF.nsp><img src=img/FAC-WSN_tcejorP_noyhcaT.jpg></img></a>
+<img id="T" src="img/T.gif" style="border: 5px solid transparent">
+<a href=https://cdn.0065.cf/Tachyon_Project_NSW-CAF.nsp><img src=img/FAC-WSN_tcejorP_noyhcaT.jpg></img></a>
 <a href=https://cdn.0065.cf/Tactical_Mind_NSW-CAF.nsp><img src=img/FAC-WSN_dniM_lacitcaT.jpg></img></a>
 <a href=https://cdn.0065.cf/Tales_of_the_Orient_-_The_Rising_Sun_NSW-CAF.nsp><img src=img/FAC-WSN_nuS_gnisiR_ehT_-_tneirO_eht_fo_selaT.jpg></img></a>
 <a href=https://cdn.0065.cf/Tales_of_the_Tiny_Planet_NSW-CAF.nsp><img src=img/FAC-WSN_tenalP_yniT_eht_fo_selaT.jpg></img></a>
@@ -1379,7 +1303,6 @@ function topFunction() {
 <a href=https://cdn.0065.cf/WINDJAMMERS_NSW-CAF.nsp><img src=img/FAC-WSN_SREMMAJDNIW.jpg></img></a>
 <a href=https://cdn.0065.cf/WitchAndHero_NSW-CAF.nsp><img src=img/FAC-WSN_oreHdnAhctiW.jpg></img></a>
 <a href=https://cdn.0065.cf/Wizard_of_Legend_NSW-CAF.nsp><img src=img/FAC-WSN_dnegeL_fo_draziW.jpg></img></a>
-<a href=https://cdn.0065.cf/Woodle_Tree_Adventures_NSW-CAF.nsp><img src=img/FAC-WSN_serutnevdA_eerT_eldooW.jpg></img></a>
 <a href=https://cdn.0065.cf/Woodle_Tree_NSW-CAF.nsp><img src=img/FAC-WSN_eerT_eldooW.jpg></img></a>
 <a href=https://cdn.0065.cf/Word_Puzzles_by_POWGI_NSW-CAF.nsp><img src=img/FAC-WSN_IGWOP_yb_selzzuP_droW.jpg></img></a>
 <a href=https://cdn.0065.cf/Word_Search_by_POWGI_NSW-CAF.nsp><img src=img/FAC-WSN_IGWOP_yb_hcraeS_droW.jpg></img></a>
@@ -1413,21 +1336,27 @@ function topFunction() {
 <a href=https://cdn.0065.cf/Zombillie_NSW-CAF.nsp><img src=img/FAC-WSN_eillibmoZ.jpg></img></a>
 <a href=https://cdn.0065.cf/ZOMB_NSW-CAF.nsp><img src=img/FAC-WSN_BMOZ.jpg></img></a>
 <a href=https://cdn.0065.cf/Zotrix_Solar_Division_NSW-CAF.nsp><img src=img/FAC-WSN_noisiviD_raloS_xirtoZ.jpg></img></a>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
-window.onscroll = function() {myFunction()};
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
-var header = document.getElementById("atr");
-var sticky = header.offsetTop;
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
   } else {
-    header.classList.remove("sticky");
+    mybutton.style.display = "none";
   }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 </body>
-<footer>
-</footer>
-</center>
+</html>
